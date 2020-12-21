@@ -22,10 +22,7 @@ var chartGraph = new Chart(ctx,{
     borderColor: [
         'rgba(255, 99, 132, 1)',
     ],
-    options: {  
-        responsive: true,
-        maintainAspectRatio: false
-    },
+    
 
     
 })
