@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona virus - dados</title>
+    <link   href = " styles.css " rel = " stylesheet " >
+
+
+</head>
+<body>
+    <div class="header">
+        <img src="./flamenco-pandemic.png" class="img" alt="Corona" width=20% height=60% >
+        <h1 class="texto" >Boletim Covid-19  - Marabá-PA</h1>
+    </div>
+
+    <div class="painel">
+        <h1 class="text">Dados atualizados -  covid-19 - Marabá-PA - 19/12/2020</h1>
+        <div class="dados">
+            <h1 class="text1" >Dados officiais retirados do boletim corona virus </h1>   
+           <div class="collum1">
+                <div class="box">
+                    <p class="pNum">10652</p>
+                    <p>Confirmados</p>
+
+                </div>
+                <div class="box">
+                    <p class="pNum">10335</p>
+                    <p>Recuperados</p>
+
+                </div>
+           </div>
+           <div class="collum1">
+            <div class="box">
+                <p class="pNum">227</p>
+                <p>Óbitos</p>
+            </div>
+            <div class="box">
+                <p class="pNum">27</p>
+                <p>Internados</p>
+            </div>
+            <div class="box">
+                <p class="pNum">63</p>
+                <p>Isolados</p>
+
+            </div>
+       </div>
+
+        </div>
+        
+    </div>
+    <div class="painel2">
+        <h1 class="text1">
+            Grafico com dados diarios - Corona Virus - Marabá
+        </h1> 
+    <div class="menu">
+        <button name="button" class="botao" onclick="chartCasos()">
+        <h2>Casos </h2>
+        </button>
+        <button name="button" class="botao" onclick="chartRecuperados()">
+            <h2>Recuperados </h2>
+            </button>
+        <button name="button" class="botao" onclick="chartObitos()">
+            <h2>Obitos </h2>
+        </button>
+        <button name="button" class="botao" onclick="chartInternados()">
+            <h2>Internados </h2>
+        </button>
+        <button name="button" class="botao" onclick="chartIsolados()">
+            <h2>Isolados </h2>
+        </button>
+    </div>
+    
+        <canvas class="line-chart">
+
+        </canvas>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+    <script src="js.js">
+    </script>
+</body>
+
+</html>
